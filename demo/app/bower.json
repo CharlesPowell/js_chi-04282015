@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "version": "0.0.0",
+  "name": "JS_Chi Meetup test App",
+  "version": "0.0.1",
   "dependencies": {
     "angular": "^1.3.0",
     "angular-resource": "^1.3.0",
@@ -11,5 +11,5 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "appApp"
+  "moduleName": "testApp"
 }

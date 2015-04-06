@@ -2,29 +2,29 @@
 
 /**
  * @ngdoc overview
- * @name appApp
+ * @name testApp
  * @description
- * # appApp
+ * # testApp
  *
  * Main module of the application.
  */
 angular
-  .module('appApp', [
+  .module('testApp', [
     'ngResource',
     'ngRoute',
     'ngSanitize'
   ])
-  .config(function ($routeProvider) {
+  .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutController'
       })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  }]);
