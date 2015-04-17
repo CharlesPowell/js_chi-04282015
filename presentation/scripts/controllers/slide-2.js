@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:Slide2
+ * @name angular1xApp.controller:Slide2
  * @description
  * # Slide 2 Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('Slide2Controller', ['$scope', function($scope) {
         // 1 === prerender
         // 2 === diy

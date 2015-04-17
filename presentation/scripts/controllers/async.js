@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:AsynchController
+ * @name angular1xApp.controller:AsynchController
  * @description
  * # Asynch Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('AsyncController', ['$scope', '$timeout', function($scope, $timeout) {
         $timeout(function() {
             $scope.asynchronousData = {
@@ -29,7 +29,7 @@ angular.module('angularSEOApp')
         });
 
         $scope.code =
-            "angular.module('angularSEOApp')\n" +
+            "angular.module('angular1xApp')\n" +
             "   .controller('AsyncController', ['$scope', '$timeout', function($scope, $timeout) {\n" +
             "       $timeout(function() {\n" +
             "           $scope.asynchronousData = {\n" +

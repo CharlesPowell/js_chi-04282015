@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:Slide8
+ * @name angular1xApp.controller:Slide8
  * @description
  * # Slide 8 Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('Slide8Controller', ['$scope', '$http', function($scope, $http) {
         // 1 === Synchronous Escaped Fragment
         // 2 === Asynchronous Escaped Fragment

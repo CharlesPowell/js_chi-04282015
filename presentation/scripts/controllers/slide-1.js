@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:Slide1
+ * @name angular1xApp.controller:Slide1
  * @description
  * # Slide 1 Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('Slide1Controller', ['$scope', '$http', function($scope, $http) {
         var problems = [
             {id: 0, text: 'Nothing should be rendered until all of this is complete'},

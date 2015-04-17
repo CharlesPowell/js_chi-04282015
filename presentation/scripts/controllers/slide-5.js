@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:Slide5
+ * @name angular1xApp.controller:Slide5
  * @description
  * # Slide 5 Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('Slide5Controller', ['$scope', '$http', function($scope, $http) {
         // 1 === server-side implementation
         // 2 === PhantomJS crawler

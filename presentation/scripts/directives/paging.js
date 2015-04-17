@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.directive:Paging
+ * @name angular1xApp.directive:Paging
  * @description
  * # Paging Directive
- * Directive of the angularSEOApp
+ * Directive of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .directive('paging',
     ['$location', function ($location) {
         return {

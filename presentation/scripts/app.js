@@ -1,11 +1,10 @@
 'use strict';
 
 angular
-    .module('angularSEOApp', [
+    .module('angular1xApp', [
         'ngAnimate',
         'ngResource',
         'ngRoute',
-        'seo',
         'hljs'
     ])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -41,18 +40,14 @@ angular
             })
             .when('/6', {
                 templateUrl: 'views/sync.html',
-                controller: ['$scope', 'SEOControllerInterceptor', function($scope, SEOControllerInterceptor) {
-                    SEOControllerInterceptor.intercept('SyncController', $scope);
-                }]
+                controller: 'SyncController'
             })
             .when('/async', {
                 redirectTo: '/7'
             })
             .when('/7', {
                 templateUrl: 'views/async.html',
-                controller: ['$scope', 'SEOControllerInterceptor', function($scope, SEOControllerInterceptor) {
-                    SEOControllerInterceptor.intercept('AsyncController', $scope, true);
-                }]
+                controller: 'AsyncController'
             })
             .when('/8', {
                 templateUrl: 'views/slide-8.html',

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:Slide4
+ * @name angular1xApp.controller:Slide4
  * @description
  * # Slide 4 Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('Slide4Controller', ['$scope', '$http', function($scope, $http) {
         // 1 === client software
         // 2 === Angular-SEO

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:SyncController
+ * @name angular1xApp.controller:SyncController
  * @description
  * # Sync Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('SyncController', ['$scope', function($scope) {
         $scope.synchronousData = {
             string: 'This is synchronous text',
@@ -21,7 +21,7 @@ angular.module('angularSEOApp')
         };
 
         $scope.code =
-            "angular.module('angularSEOApp').controller('SyncController', ['$scope', function($scope) {\n" +
+            "angular.module('angular1xApp').controller('SyncController', ['$scope', function($scope) {\n" +
             "   $scope.synchronousData = {\n" +
             "       string: 'This is synchronous text',\n" +
             "       array: [\n" +

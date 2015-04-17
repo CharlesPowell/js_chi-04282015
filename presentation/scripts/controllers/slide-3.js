@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularSEOApp.controller:Slide3
+ * @name angular1xApp.controller:Slide3
  * @description
  * # Slide 3 Controller
- * Controller of the angularSEOApp
+ * Controller of the angular1xApp
  */
-angular.module('angularSEOApp')
+angular.module('angular1xApp')
     .controller('Slide3Controller', ['$scope', function($scope) {
         var reasons = [
             {id: 0, text: "Our major DevOps hurdle would exist even with Prerender.io"},
