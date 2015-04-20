@@ -20,9 +20,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainController'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutController'
+      .when('/user/:id', {
+        templateUrl: 'views/user.html',
+        controller: 'UserController'
       })
       .otherwise({
         redirectTo: '/'

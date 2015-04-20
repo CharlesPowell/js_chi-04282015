@@ -1,0 +1,25 @@
+<form ng-submit="updateUser()">
+    <label>
+        <h5>First Name</h5>
+        <input ng-model="user.first_name">
+        <h5>Last Name</h5>
+        <input ng-model="user.last_name">
+    </label>
+    <label>
+        <h5>email</h5>
+        <input ng-model="user.email">
+    </label>
+    <label>
+        <h5>Address</h5>
+        <input ng-model="user.address">
+        <h5>City</h5>
+        <input ng-model="user.city">
+        <h5>State</h5>
+        <input ng-model="user.state">
+        <h5>Zip</h5>
+        <input ng-model="user.zip">
+    </label>
+
+    <button type="submit">Update</button>
+    <button ng-click="deleteUser()">Delete</button>
+</form>

@@ -1,0 +1,252 @@
+[
+  {
+    "id": 0,
+    "first_name": "Gerald",
+    "last_name": "Russell",
+    "email": "grussello@forbes.com",
+    "address": "3753 Hoepker Terrace",
+    "city": "Cleveland",
+    "state": "Ohio",
+    "zip": "44185"
+  },
+  {
+    "id": 1,
+    "first_name": "Laura",
+    "last_name": "Kelley",
+    "email": "lkelley0@webnode.com",
+    "address": "9514 Mendota Junction",
+    "city": "San Diego",
+    "state": "California",
+    "zip": "92121"
+  },
+  {
+    "id": 2,
+    "first_name": "Lewis",
+    "last_name": "Black",
+    "email": "lblack1@craigslist.org",
+    "address": "08066 Bashford Avenue",
+    "city": "Staten Island",
+    "state": "New York",
+    "zip": "10310"
+  },
+  {
+    "id": 3,
+    "first_name": "Timothy",
+    "last_name": "Mitchell",
+    "email": "tmitchell2@chron.com",
+    "address": "799 Butterfield Drive",
+    "city": "Lincoln",
+    "state": "Nebraska",
+    "zip": "68510"
+  },
+  {
+    "id": 4,
+    "first_name": "Raymond",
+    "last_name": "Crawford",
+    "email": "rcrawford3@tmall.com",
+    "address": "844 Sutherland Parkway",
+    "city": "Rockford",
+    "state": "Illinois",
+    "zip": "61110"
+  },
+  {
+    "id": 5,
+    "first_name": "Jason",
+    "last_name": "Castillo",
+    "email": "jcastillo4@youtu.be",
+    "address": "8279 Clyde Gallagher Trail",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "zip": "28272"
+  },
+  {
+    "id": 6,
+    "first_name": "Sara",
+    "last_name": "Stone",
+    "email": "sstone5@smugmug.com",
+    "address": "9590 Old Gate Park",
+    "city": "Scottsdale",
+    "state": "Arizona",
+    "zip": "85271"
+  },
+  {
+    "id": 7,
+    "first_name": "Mark",
+    "last_name": "Cunningham",
+    "email": "mcunningham6@opensource.org",
+    "address": "9843 Fairview Crossing",
+    "city": "Madison",
+    "state": "Wisconsin",
+    "zip": "53705"
+  },
+  {
+    "id": 8,
+    "first_name": "Jennifer",
+    "last_name": "Larson",
+    "email": "jlarson7@tinypic.com",
+    "address": "99127 Huxley Hill",
+    "city": "San Antonio",
+    "state": "Texas",
+    "zip": "78255"
+  },
+  {
+    "id": 9,
+    "first_name": "Paula",
+    "last_name": "Scott",
+    "email": "pscott8@apache.org",
+    "address": "5 Harbort Pass",
+    "city": "Gainesville",
+    "state": "Georgia",
+    "zip": "30506"
+  },
+  {
+    "id": 10,
+    "first_name": "Christine",
+    "last_name": "Mccoy",
+    "email": "cmccoy9@tiny.cc",
+    "address": "60 Waywood Circle",
+    "city": "Washington",
+    "state": "District of Columbia",
+    "zip": "20520"
+  },
+  {
+    "id": 11,
+    "first_name": "Terry",
+    "last_name": "Howell",
+    "email": "thowella@jalbum.net",
+    "address": "08174 Swallow Circle",
+    "city": "Inglewood",
+    "state": "California",
+    "zip": "90310"
+  },
+  {
+    "id": 12,
+    "first_name": "Tina",
+    "last_name": "Harrison",
+    "email": "tharrisonb@mysql.com",
+    "address": "7 Colorado Avenue",
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "zip": "96805"
+  },
+  {
+    "id": 13,
+    "first_name": "Louise",
+    "last_name": "Warren",
+    "email": "lwarrenc@about.me",
+    "address": "13 Nobel Hill",
+    "city": "El Paso",
+    "state": "Texas",
+    "zip": "79923"
+  },
+  {
+    "id": 14,
+    "first_name": "Mary",
+    "last_name": "Meyer",
+    "email": "mmeyerd@w3.org",
+    "address": "2600 Northview Avenue",
+    "city": "Houston",
+    "state": "Texas",
+    "zip": "77245"
+  },
+  {
+    "id": 15,
+    "first_name": "Norma",
+    "last_name": "Bradley",
+    "email": "nbradleye@mtv.com",
+    "address": "89944 Bellgrove Point",
+    "city": "Saint Augustine",
+    "state": "Florida",
+    "zip": "32092"
+  },
+  {
+    "id": 16,
+    "first_name": "Joshua",
+    "last_name": "Hudson",
+    "email": "jhudsonf@oracle.com",
+    "address": "0063 Prentice Circle",
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "zip": "19125"
+  },
+  {
+    "id": 17,
+    "first_name": "Stephen",
+    "last_name": "Collins",
+    "email": "scollinsg@newsvine.com",
+    "address": "01220 Aberg Trail",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "zip": "37924"
+  },
+  {
+    "id": 18,
+    "first_name": "Jessica",
+    "last_name": "Campbell",
+    "email": "jcampbellh@diigo.com",
+    "address": "14 Myrtle Street",
+    "city": "Saint Louis",
+    "state": "Missouri",
+    "zip": "63131"
+  },
+  {
+    "id": 19,
+    "first_name": "Louise",
+    "last_name": "Perry",
+    "email": "lperryi@answers.com",
+    "address": "55712 Merrick Circle",
+    "city": "Dallas",
+    "state": "Texas",
+    "zip": "75358"
+  },
+  {
+    "id": 20,
+    "first_name": "Diane",
+    "last_name": "Patterson",
+    "email": "dpattersonj@ucla.edu",
+    "address": "3843 Becker Plaza",
+    "city": "Durham",
+    "state": "North Carolina",
+    "zip": "27710"
+  },
+  {
+    "id": 21,
+    "first_name": "Steve",
+    "last_name": "Rose",
+    "email": "srosek@gov.uk",
+    "address": "7170 Mayfield Point",
+    "city": "Billings",
+    "state": "Montana",
+    "zip": "59105"
+  },
+  {
+    "id": 22,
+    "first_name": "Debra",
+    "last_name": "Howard",
+    "email": "dhowardl@statcounter.com",
+    "address": "57798 Veith Trail",
+    "city": "Odessa",
+    "state": "Texas",
+    "zip": "79769"
+  },
+  {
+    "id": 23,
+    "first_name": "Paula",
+    "last_name": "Robertson",
+    "email": "probertsonm@digg.com",
+    "address": "7117 Westend Lane",
+    "city": "Los Angeles",
+    "state": "California",
+    "zip": "90076"
+  },
+  {
+    "id": 24,
+    "first_name": "Deborah",
+    "last_name": "Graham",
+    "email": "dgrahamn@instagram.com",
+    "address": "83 Golf Course Junction",
+    "city": "Santa Monica",
+    "state": "California",
+    "zip": "90405"
+  }
+]
