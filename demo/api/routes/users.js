@@ -49,4 +49,15 @@ router.put('/:id', function(req, res) {
     });
 });
 
+router.delete('/:id', function(req, res) {
+    db.delete(req.params.id, function(err, all) {
+        if(err) {
+            res.status(500).send(err);
+        }
+        else {
+            res.status(200).send(all);
+        }
+    });
+});
+
 module.exports = router;

@@ -20,16 +20,6 @@
     "zip": "92121"
   },
   {
-    "id": 2,
-    "first_name": "Lewis",
-    "last_name": "Black",
-    "email": "lblack1@craigslist.org",
-    "address": "08066 Bashford Avenue",
-    "city": "Staten Island",
-    "state": "New York",
-    "zip": "10310"
-  },
-  {
     "id": 3,
     "first_name": "Timothy",
     "last_name": "Mitchell",
@@ -71,13 +61,13 @@
   },
   {
     "id": 7,
-    "first_name": "Mark",
-    "last_name": "Cunningham",
-    "email": "mcunningham6@opensource.org",
-    "address": "9843 Fairview Crossing",
-    "city": "Madison",
-    "state": "Wisconsin",
-    "zip": "53705"
+    "first_name": "Jesse",
+    "last_name": "Stone",
+    "email": "jstone8@smugmug.com",
+    "address": "9590 Old Gate Park",
+    "city": "Scottsdale",
+    "state": "Arizona",
+    "zip": "85271"
   },
   {
     "id": 8,

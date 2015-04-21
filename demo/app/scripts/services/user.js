@@ -9,5 +9,5 @@
  */
 angular.module('testApp')
     .factory('User', ['$resource', function ($resource) {
-        return $resource('http://localhost:3000/users/:id');
+        return $resource('http://localhost:3000/users/:id', null, {update: {method: 'PUT'} });
     }]);
