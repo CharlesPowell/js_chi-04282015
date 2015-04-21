@@ -8,20 +8,27 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-    .controller('UserController', ['$scope', '$routeParams', '$location', 'User', function ($scope, $routeParams, $location, User) {
-        $scope.user = User.get({id: $routeParams.id}, function(user) {
-            console.log(user);
-        });
+    .controller('UserController', ['$scope', '$routeParams', '$location', 'UserCollection', 'User',
+        function ($scope, $routeParams, $location, UserCollection, User) {
+            $scope.user = UserCollection.getUser($routeParams.id);
+            if(angular.isUndefined($scope.user)) {
+                $scope.user = User.get({ id: $routeParams.id });
+            }
 
-        $scope.updateUser = function() {
-            User.update({id: $scope.user.id}, $scope.user, function(user) {
-                $scope.user = user;
-            });
-        };
-
-        $scope.deleteUser = function() {
-            $scope.user.$delete({id: $scope.user.id}, function() {
+            $scope.cancel = function() {
                 $location.url('/');
-            });
-        };
-    }]);
+            };
+
+            $scope.updateUser = function() {
+                User.update({id: $scope.user.id}, $scope.user, function() {
+                    $scope.cancel();
+                });
+            };
+
+            $scope.deleteUser = function() {
+                $scope.user.$delete({id: $scope.user.id}, function() {
+                    $scope.cancel();
+                });
+            };
+        }
+    ]);

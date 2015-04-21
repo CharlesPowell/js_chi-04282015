@@ -11,9 +11,9 @@
   },
   {
     "id": 1,
-    "first_name": "Laura",
+    "first_name": "David E.",
     "last_name": "Kelley",
-    "email": "lkelley0@webnode.com",
+    "email": "dekelley0@webnode.com",
     "address": "9514 Mendota Junction",
     "city": "San Diego",
     "state": "California",
@@ -71,33 +71,13 @@
   },
   {
     "id": 8,
-    "first_name": "Jennifer",
-    "last_name": "Larson",
-    "email": "jlarson7@tinypic.com",
-    "address": "99127 Huxley Hill",
-    "city": "San Antonio",
-    "state": "Texas",
-    "zip": "78255"
-  },
-  {
-    "id": 9,
-    "first_name": "Paula",
-    "last_name": "Scott",
-    "email": "pscott8@apache.org",
-    "address": "5 Harbort Pass",
-    "city": "Gainesville",
-    "state": "Georgia",
-    "zip": "30506"
-  },
-  {
-    "id": 10,
-    "first_name": "Christine",
-    "last_name": "Mccoy",
-    "email": "cmccoy9@tiny.cc",
-    "address": "60 Waywood Circle",
-    "city": "Washington",
-    "state": "District of Columbia",
-    "zip": "20520"
+    "first_name": "Sharon",
+    "last_name": "Stone",
+    "email": "sstone9@smugmug.com",
+    "address": "9590 Old Gate Park",
+    "city": "Scottsdale",
+    "state": "Arizona",
+    "zip": "85271"
   },
   {
     "id": 11,

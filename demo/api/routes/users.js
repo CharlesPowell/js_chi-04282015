@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Store = require("jfs");
+var Store = require('../lib/Store');
 var db = new Store('./data/users.json', {pretty:true});
 
 /* GET users listing. */

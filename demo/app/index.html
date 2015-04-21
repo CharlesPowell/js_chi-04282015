@@ -18,8 +18,8 @@
         <!-- endbuild -->
     </head>
     <body ng-app="testApp" ng-strict-di>
-        <!-- Add your site or application content here -->
-        <ng-view></ng-view>
+        <h2 class="title">A Basic AngularJS 1.x App</h2>
+        <ng-view class="content"></ng-view>
 
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
@@ -34,9 +34,11 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/user.js"></script>
+        <script src="scripts/controllers/single-page.js"></script>
 
         <script src="scripts/services/user.js"></script>
         <script src="scripts/services/users.js"></script>
+        <script src="scripts/services/user-collection.js"></script>
         <!-- endbuild -->
     </body>
 </html>

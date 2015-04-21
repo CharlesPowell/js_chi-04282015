@@ -1,0 +1,48 @@
+<div class="left">
+    <h2>Users</h2>
+    <ul>
+        <li ng-repeat="user in users track by user.id"><a ng-click="loadUser(user)">{{user.first_name}}&nbsp;{{user.last_name}}</a></li>
+    </ul>
+    <h4>{{error}}</h4>
+</div>
+
+<div class="right">
+    <form name='singlePageUser' ng-submit="updateUser()">
+        <div class="user-data">
+            <h3>Name</h3>
+            <label>
+                <input ng-model="user.first_name">
+            </label>
+            <label>
+                <input ng-model="user.last_name">
+            </label>
+        </div>
+        <div class="user-data">
+            <h3>email</h3>
+            <input ng-model="user.email">
+        </div>
+        <div class="user-data">
+            <h3>Address</h3>
+            <label>
+                <h4>Street</h4>
+                <input ng-model="user.address">
+            </label>
+            <label>
+                <h4>City</h4>
+                <input ng-model="user.city">
+            </label>
+            <label>
+                <h4>State</h4>
+                <input ng-model="user.state">
+            </label>
+            <label>
+                <h4>Zip</h4>
+                <input ng-model="user.zip">
+            </label>
+        </div>
+
+        <button ng-click="cancel()">Cancel</button>
+        <button type="submit">Update</button>
+        <button ng-click="deleteUser()">Delete</button>
+    </form>
+</div>
