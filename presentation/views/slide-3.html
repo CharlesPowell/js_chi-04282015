@@ -1,6 +1,11 @@
-<div class="slide slide-3" ng-click="addReason()">
-    <h1>Why'd I choose the DIY solution?</h1>
+<div class="slide slide-3" ng-click="addParts()">
+    <h1>ngApp/module</h1>
     <ul>
-        <li class="animated" ng-repeat="reason in reasons track by reason.id"><h2>{{reason.text}}</h2></li>
+        <li class="animated" ng-repeat="part in parts track by part.id">
+            <h2>{{part.text}}</h2>
+            <ul ng-if="part.subItem">
+                <li><h3>{{part.subItem.text}}</h3></li>
+            </ul>
+        </li>
     </ul>
 </div>

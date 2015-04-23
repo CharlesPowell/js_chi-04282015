@@ -8,21 +8,18 @@
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide2Controller', ['$scope', function($scope) {
-        // 1 === prerender
-        // 2 === diy
-        var maxPartialIndex = 2;
-        $scope.showPartial = 1;
-        $scope.switchPartial = function($event) {
-            if($event.ctrlKey) { // Move back
-                if ($scope.showPartial > 1) {
-                    $scope.showPartial--;
-                }
-            }
-            else { // Move forward
-                if ($scope.showPartial < maxPartialIndex) {
-                    $scope.showPartial++;
-                }
+    .controller('Slide2Controller', ['$scope', '$http', function($scope, $http) {
+        var pieces = [
+            {id: 0, text: 'Resources'},
+            {id: 1, text: 'Services'},
+            {id: 2, text: 'Templates'},
+            {id: 3, text: 'Controllers'},
+            {id: 4, text: 'Routing'}
+        ];
+        $scope.pieces = [{id: 5, text: 'App/Module'}];
+        $scope.addPiece = function() {
+            if(pieces.length > 0) {
+                $scope.pieces.push(pieces.pop());
             }
         };
     }]);

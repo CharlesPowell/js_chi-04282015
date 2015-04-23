@@ -9,14 +9,15 @@
  */
 angular.module('angular1xApp')
     .controller('Slide3Controller', ['$scope', function($scope) {
-        var reasons = [
-            {id: 0, text: "Our major DevOps hurdle would exist even with Prerender.io"},
-            {id: 1, text: "Don't have the manpower to maintain our own Prerender.io server"}
+        var parts = [
+            {id: 0, text: "angular.module('demoApp', [...])"},
+            {id: 1, text: "angular.bootstrap (manual bootstrapping)", subItem: {text: "angular.bootstrap(any, ['demoApp'])"} },
+            {id: 2, text: "ng-app directive (auto-bootstrapping)", subItem: {text: "<any ng-app='demoApp'>...</any>"} }
         ];
-        $scope.reasons = [{id: 2, text: "Cost (we have a lot of pages)"}];
-        $scope.addReason = function() {
-            if(reasons.length > 0) {
-                $scope.reasons.push(reasons.pop());
+        $scope.parts = [{id: 3, text: "Bootstrapping (Auto vs. Manual)"}];
+        $scope.addParts = function() {
+            if(parts.length > 0) {
+                $scope.parts.push(parts.pop());
             }
         };
     }]);

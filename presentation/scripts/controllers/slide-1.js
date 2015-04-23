@@ -9,27 +9,15 @@
  */
 angular.module('angular1xApp')
     .controller('Slide1Controller', ['$scope', '$http', function($scope, $http) {
-        var problems = [
-            {id: 0, text: 'Nothing should be rendered until all of this is complete'},
-            {id: 1, text: 'Dynamic Data needs to be loaded'},
-            {id: 2, text: 'JavaScript needs to be parsed'}
+        var reasons = [
+            {id: 0, text: '42'},
+            {id: 1, text: 'Because its easy until it\'s not'},
+            {id: 2, text: 'Because reading a tutorial can only get you so far'}
         ];
-        $scope.problems = [{id: 3, text: 'SPAs need to be run'}];
-        $scope.curlProblems = false;
-        $scope.crawledHTML = '';
-        $scope.addProblem = function() {
-            if(problems.length > 0) {
-                $scope.problems.push(problems.pop());
+        $scope.reasons = [{id: 3, text: 'Because AngularJS is not the only framework around'}];
+        $scope.addPiece = function() {
+            if(reasons.length > 0) {
+                $scope.reasons.push(reasons.pop());
             }
-            else {
-                $scope.curlProblems = true;
-            }
-        };
-
-        $scope.testPlainSyncRequest = function() {
-            $http.get('http://seo.angular.local/sync')
-                .success(function(data) {
-                    $scope.crawledHTML = data;
-                });
         };
     }]);
