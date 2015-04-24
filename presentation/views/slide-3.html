@@ -1,11 +1,5 @@
-<div class="slide slide-3" ng-click="addParts()">
+<div class="slide slide-3 list-slide" ng-click="addItems()">
     <h1>ngApp/module</h1>
-    <ul>
-        <li class="animated" ng-repeat="part in parts track by part.id">
-            <h2>{{part.text}}</h2>
-            <ul ng-if="part.subItem">
-                <li><h3>{{part.subItem.text}}</h3></li>
-            </ul>
-        </li>
-    </ul>
+    <hr>
+    <ng-include src=" 'views/partials/list-slide.html' "></ng-include>
 </div>

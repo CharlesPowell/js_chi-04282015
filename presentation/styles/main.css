@@ -82,7 +82,6 @@ pre {
     background-color: #FFFFFF;
     color: #434C54;
     display: block;
-    /*padding: auto 25px;*/
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -138,6 +137,13 @@ paging > button:disabled {
     text-align: center;
 }
 
+.slide > ul > li.ng-enter {
+    -webkit-animation: fadeInUp 1s;
+    -moz-animation: fadeInUp 1s;
+    -o-animation: fadeInUp 1s;
+    animation: fadeInUp 1s;
+}
+
 .slide-0 > h1 >figure {
     display: inline-block;
     margin: 0;
@@ -166,18 +172,6 @@ paging > button:disabled {
     padding-right: 10px;
 }
 
-.slide-1 > ul > li.ng-enter,
-.slide-3 > ul > li.ng-enter {
-    -webkit-animation: fadeInUp 1s;
-    -moz-animation: fadeInUp 1s;
-    -o-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
-}
-
-.slide-2 > h3 {
-    text-align: left;
-}
-
 .slide-4 > ng-include > div > code {
     font-size: 20px;
     text-align: left;
@@ -191,18 +185,6 @@ paging > button:disabled {
     font-family: monospace, monospace;
     font-size: 19px;
     text-align: left;
-}
-
-.slide-6 > h3,
-.slide-7 > h3 {
-    text-align: left;
-}
-
-.slide-6 > h3 > .data,
-.slide-6 > ul > li > .data,
-.slide-7 > h3 > .data,
-.slide-7 > ul > li > .data {
-    color: red;
 }
 
 .slide-1 > ng-include > .code,
@@ -222,4 +204,12 @@ paging > button:disabled {
     word-wrap: break-word;
     white-space: pre-wrap;
     max-height: 450px;
+}
+
+.slide-10 > figure {
+    margin: 0;
+}
+
+.slide-10 > figure > img {
+    width: 63%;
 }

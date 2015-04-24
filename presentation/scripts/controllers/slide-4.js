@@ -8,54 +8,13 @@
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide4Controller', ['$scope', '$http', function($scope, $http) {
-        // 1 === client software
-        // 2 === Angular-SEO
-        // 3 === Angular-SEO Controller Interceptor
-        var maxPartialIndex = 3;
-        $scope.showPartial = 1;
-        $scope.switchPartial = function($event) {
-            if($event.ctrlKey) { // Move back
-                if ($scope.showPartial > 1) {
-                    $scope.showPartial--;
-                }
-            }
-            else { // Move forward
-                if($scope.showPartial < maxPartialIndex) {
-                    $scope.showPartial++;
-                }
-            }
-        };
+    .controller('Slide4Controller', ['$scope', '$controller', function($scope, $controller) {
+        $controller('ListSlideController', {$scope: $scope});
 
-        $scope.routeCode =
-        ".when('/sync',\n" +
-        "   templateUrl: 'views/sync.html',\n" +
-        "   controller: ['$scope', 'SEOControllerInterceptor', function($scope, SEOControllerInterceptor) {\n" +
-        "       SEOControllerInterceptor.intercept('SyncController', $scope);\n" +
-        "   }]\n" +
-        "})\n" +
-        ".when('/async',\n" +
-        "   templateUrl: 'views/async.html',\n" +
-        "   controller: ['$scope', 'SEOControllerInterceptor', function($scope, SEOControllerInterceptor) {\n" +
-        "       SEOControllerInterceptor.intercept('AsyncController', $scope, true);\n" +
-        "   }]\n" +
-        "})";
-
-        $scope.seoControllerInterceptorCode =
-            "angular.module('...')\n" +
-            "   .factory('SEOControllerInterceptor', ['$controller', '$q', function ($controller, $q) {\n" +
-            "       return {\n" +
-            "           intercept: function(controllerName, scope, isAsyncDataController) {\n" +
-            "               $q(function(resolve) {\n" +
-            "                   scope.resolveAllData = resolve;\n" +
-            "                   $controller(controllerName, {$scope: scope});\n" +
-            "                   if(angular.isUndefined(isAsyncDataController) || !isAsyncDataController) {\n" +
-            "                       scope.resolveAllData();\n" +
-            "                   }\n" +
-            "               }).then(function() {\n" +
-            "                   scope.htmlReady();\n" +
-            "               });\n" +
-            "           }\n" +
-            "       }\n" +
-            "}]);";
+        $scope.listItemsCache = [
+            {id: 0, text: "Other stuff too..."},
+            {id: 1, text: "Tells your app how to make the display do stuff (Controller)"},
+            {id: 2, text: "Tells your app what to display once it gets there (Template)"}
+        ];
+        $scope.listItems = [{id: 3, text: "Tells your app where to go"}];
     }]);

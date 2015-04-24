@@ -8,29 +8,12 @@
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide8Controller', ['$scope', '$http', function($scope, $http) {
-        // 1 === Synchronous Escaped Fragment
-        // 2 === Asynchronous Escaped Fragment
-        var maxPartialIndex = 2;
-        $scope.showPartial = 1;
-        $scope.switchPartial = function($event) {
-            if($event.ctrlKey) { // Move back
-                if ($scope.showPartial > 1) {
-                    $scope.showPartial--;
-                    $scope.crawledHTML = '';
-                }
-            }
-            else { // Move forward
-                if($scope.showPartial < maxPartialIndex) {
-                    $scope.showPartial++;
-                    $scope.crawledHTML = '';
-                }
-            }
-        };
-        $scope.testEscapedFragment = function(route) {
-            $http.get('http://seo.angular.local/?_escaped_fragment_=' + route)
-                .success(function(data) {
-                    $scope.crawledHTML = data;
-                });
-        };
+    .controller('Slide8Controller', ['$scope', '$controller', function($scope, $controller) {
+        $controller('ListSlideController', {$scope: $scope});
+
+        $scope.listItemsCache = [
+            {id: 0, text: "Is an instantiated service, not a singleton", subItem: {text: "Must be new'ed in user code"}},
+            {id: 1, text: "Wrapper for $http", subItem: {text: "Contains $get, $save and $delete object functions and query class function"}}
+        ];
+        $scope.listItems = [{id: 2, text: "Used to connect to RESTful APIs"}];
     }]);

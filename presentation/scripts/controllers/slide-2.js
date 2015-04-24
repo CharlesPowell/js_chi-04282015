@@ -8,18 +8,16 @@
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide2Controller', ['$scope', '$http', function($scope, $http) {
-        var pieces = [
-            {id: 0, text: 'Resources'},
-            {id: 1, text: 'Services'},
-            {id: 2, text: 'Templates'},
-            {id: 3, text: 'Controllers'},
-            {id: 4, text: 'Routing'}
+    .controller('Slide2Controller', ['$scope', '$controller', function($scope, $controller) {
+        $controller('ListSlideController', {$scope: $scope});
+
+        $scope.listItemsCache = [
+            {id: 0, text: 'Dependency Injection'},
+            {id: 1, text: '$resource'},
+            {id: 2, text: 'Services'},
+            {id: 3, text: 'Templates'},
+            {id: 4, text: 'Controllers'},
+            {id: 5, text: 'Routing'}
         ];
-        $scope.pieces = [{id: 5, text: 'App/Module'}];
-        $scope.addPiece = function() {
-            if(pieces.length > 0) {
-                $scope.pieces.push(pieces.pop());
-            }
-        };
+        $scope.listItems = [{id: 6, text: 'App/Module'}];
     }]);

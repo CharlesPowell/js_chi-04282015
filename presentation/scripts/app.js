@@ -35,26 +35,21 @@ angular
                 templateUrl: 'views/slide-5.html',
                 controller: 'Slide5Controller'
             })
-            .when('/sync', {
-                redirectTo: '/6'
-            })
             .when('/6', {
-                templateUrl: 'views/sync.html',
-                controller: 'SyncController'
-            })
-            .when('/async', {
-                redirectTo: '/7'
+                templateUrl: 'views/slide-6.html',
+                controller: 'Slide6Controller'
             })
             .when('/7', {
-                templateUrl: 'views/async.html',
-                controller: 'AsyncController'
+                templateUrl: 'views/slide-7.html',
+                controller: 'Slide7Controller'
             })
             .when('/8', {
                 templateUrl: 'views/slide-8.html',
                 controller: 'Slide8Controller'
             })
             .when('/9', {
-                templateUrl: 'views/slide-9.html'
+                templateUrl: 'views/slide-9.html',
+                controller: 'Slide9Controller'
             })
             .when('/10', {
                 templateUrl: 'views/slide-10.html'

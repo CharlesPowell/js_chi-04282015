@@ -1,6 +1,5 @@
-<div class="slide slide-1" ng-click="addReason()">
+<div class="slide slide-1 list-slide" ng-click="addItems()">
     <h1>Angular 1x Apps<br>Why are we here?</h1>
-    <ul>
-        <li class="animated" ng-repeat="reason in reasons track by reason.id"><h2>{{reason.text}}</h2></li>
-    </ul>
+    <hr>
+    <ng-include src=" 'views/partials/list-slide.html' "></ng-include>
 </div>

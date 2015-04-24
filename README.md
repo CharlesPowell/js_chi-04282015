@@ -6,16 +6,17 @@ Presented on 4/28/2015
 
  - Introduce Myself
  - Explain why I'm presenting this information (reference guy from AngularJS Meetup asking how to get started)
- - What will this presentation cover (App, Routing, Controllers, Templates, Services and Resources)
+ - What will this presentation cover (App, Routing, Controllers, Templates, Services, $resource and Dependency Injection)
  - App (bootstrapping)
  - Routing
  - Controllers
  - Templates
  - Services
- - Resources
+ - $resource
+ - Dependency Injection
+ - Explain the angular.module().config().run() sequence
  - Tie together Routing, Controllers and Templates
  - Explain Two-Way Data Binding between the Controller and the Template
  - Explain how Services work with a Controller
- - Explain how Resources are just a REST-ful implementation of the $http service
+ - Explain how $resource is just a REST-ful implementation of the $http service
  - Show how Services and Resources can be tied together
-
