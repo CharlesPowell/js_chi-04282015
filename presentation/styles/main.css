@@ -197,6 +197,24 @@ paging > button:disabled {
     text-align: left;
 }
 
+.slide-4 > ng-include > pre > .code {
+    font-size: 26px;
+}
+
+.slide-7 > ng-include > pre > .code,
+.slide-12 > ng-include > pre > .code {
+    font-size: 22px;
+}
+
+.slide-8 > ng-include > pre > .code {
+    font-size: 21px;
+}
+
+.slide-10 > ng-include > pre > .code,
+.slide-11 > ng-include > pre > .code {
+    font-size: 20px;
+}
+
 .slide-6 > figure {
     margin: 0;
 }
@@ -254,13 +272,13 @@ img.list-image {
 }
 
 .slide-11 > .example-slide > textarea {
-    font-size: 24px;
+    font-size: 22px;
     margin: 0 auto;
-    height: 310px;
+    height: 290px;
 }
 
 .slide-13 > .example-slide > textarea {
-    font-size: 24px;
+    font-size: 22px;
     margin: 0 auto;
     height: 330px;
 }

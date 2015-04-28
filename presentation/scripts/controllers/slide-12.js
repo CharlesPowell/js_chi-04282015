@@ -31,6 +31,7 @@ angular.module('angular1xApp')
         "   }]);";
 
         $scope.resourceCode = "angular.module('angular1xApp').factory('User', ['$resource', function ($resource) {\n" +
-        "   return $resource('http://localhost:3000/users/:id', null, {update: {method: 'PUT'} });\n" +
+        "       return $resource('http://localhost:3000/users/:id', null,\n" +
+        "                        { update: {method: 'PUT'} });\n" +
         "}]);";
     }]);
