@@ -11,7 +11,7 @@ angular.module('angular1xApp')
     .controller('Slide11Controller', ['$scope', 'UserCollection', function($scope, UserCollection) {
         $scope.user = undefined;
         $scope.users = [];
-        $scope.log = 'Logging:\n';
+        $scope.log = '';
         $scope.getUser = function(id) {
             $scope.user = angular.copy(UserCollection.getUser(id));
             $scope.log += 'Get User with id: ' + id + ' from the UserCollection service\n' + angular.toJson($scope.user) + '\n';
@@ -23,20 +23,23 @@ angular.module('angular1xApp')
             $scope.log += 'Users: ' + angular.toJson($scope.users) + '\n\n';
         };
 
-        $scope.serviceTestCode = "angular.module('demoApp').controller('TestController',\n" +
-        "   ['$scope', 'UserCollection', function($scope, UserCollection) {\n" +
-        "       $scope.user = undefined;\n" +
-        "       $scope.users = [];\n" +
-        "       $scope.getUser = function(id) {\n" +
-        "          $scope.user =\n" +
-        "              angular.copy(UserCollection.getUser(id));\n" +
-        "       };\n" +
-        "       $scope.addUser = function() {\n" +
-        "          $scope.users = UserCollection.addUser({\n" +
-        "              id: +$scope.user.id,\n" +
-        "              name: $scope.user.name\n" +
-        "          });\n" +
-        "          $scope.user = undefined;\n" +
-        "       };\n" +
-        "   }]);"
+        $scope.serviceTestCode = "angular.module('demoApp')\n" +
+        "   .controller('TestController',\n" +
+        "       ['$scope', 'UserCollection',\n" +
+        "       function($scope, UserCollection) {\n" +
+        "           $scope.user = undefined;\n" +
+        "           $scope.users = [];\n" +
+        "           $scope.getUser = function(id) {\n" +
+        "               $scope.user = angular.copy(\n" +
+        "                   UserCollection.getUser(id));\n" +
+        "           };\n" +
+        "           $scope.addUser = function() {\n" +
+        "               $scope.users = UserCollection\n" +
+        "                   .addUser({\n" +
+        "                       id: +$scope.user.id,\n" +
+        "                       name: $scope.user.name\n" +
+        "                   });\n" +
+        "               $scope.user = undefined;\n" +
+        "           };\n" +
+        "       }]);"
     }]);

@@ -13,7 +13,7 @@ angular.module('angular1xApp')
 
         $scope.listItemsCache = [
             {id: 0, text: '42'},
-            {id: 1, text: 'Because its easy until it\'s not'},
+            {id: 1, text: 'Because it\'s easy until it\'s not'},
             {id: 2, text: 'Because reading a tutorial can only get you so far'}
         ];
         $scope.listItems = [{id: 3, text: 'Because AngularJS is not the only framework around'}];

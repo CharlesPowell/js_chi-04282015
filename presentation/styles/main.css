@@ -237,11 +237,6 @@ paging > button:disabled {
     cursor: default;
 }
 
-.example-slide > .code-container {
-    width: 60%;
-    word-break: break-word;
-}
-
 .left {
     float: left;
 }
@@ -266,22 +261,17 @@ img.list-image {
     height: 330px;
 }
 
-.slide-11 > .example-slide > .left {
-    width: 20%;
-}
-
+.slide-11 > .example-slide > .left,
 .slide-13 > .example-slide > .left {
     width: 50%;
 }
 
-.slide-11 > .example-slide > .left > .right {
-    width: 0%;
-}
-
+.slide-11 > .example-slide > .left > .right,
 .slide-13 > .example-slide > .left > .right {
     width: 50%;
 }
 
+.slide-11 > .example-slide > .code-container,
 .slide-13 > .example-slide > .code-container {
     width: 50%;
     word-break: break-word;

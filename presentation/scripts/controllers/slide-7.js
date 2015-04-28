@@ -12,7 +12,7 @@ angular.module('angular1xApp')
         $scope.maxPartialIndex = 2;
         $controller('PartialsSlideController', {$scope: $scope});
 
-        $scope.routingCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
+        $scope.routingCode = "angular.module('demoApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
         "   .config(['$routeProvider', function ($routeProvider) {\n" +
         "       $routeProvider\n" +
         "          .when('/', {\n" +

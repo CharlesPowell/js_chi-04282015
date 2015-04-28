@@ -35,6 +35,7 @@ angular.module('angular1xApp')
             User.update({id: $scope.user.id}, $scope.user, function() {
                 $scope.log += "Updated User on server: " + angular.toJson({id: $scope.user.id, name: $scope.user.first_name + ' ' + $scope.user.last_name}) + "\n";
                 $scope.cancel();
+                refreshUsers();
             });
         };
 
@@ -58,10 +59,10 @@ angular.module('angular1xApp')
         "}\n" +
         "$scope.updateUser = function() {\n" +
         "   User.update({id: $scope.user.id}, $scope.user,\n" +
-        "       function() {$scope.cancel();});\n" +
+        "    function(){$scope.cancel(); refreshUsers();});\n" +
         "};\n" +
         "$scope.deleteUser = function() {\n" +
         "   $scope.user.$delete({id: $scope.user.id},\n" +
-        "       function() {$scope.cancel(); refreshUsers();});\n" +
+        "    function(){$scope.cancel(); refreshUsers();});\n" +
         "};\n";
     }]);

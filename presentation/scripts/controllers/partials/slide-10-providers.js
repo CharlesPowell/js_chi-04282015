@@ -13,7 +13,7 @@ angular.module('angular1xApp')
 
         $scope.listItemsCache = [
             {id: 0, text: "Provides methods and properties for configuring the service it creates, before the app starts", subItem: {text: "$routeProvider.when(...)"}},
-            {id: 1, text: "Is typically named after the service with Provider tacked on to the end", subItem: {text: "$routeProvider, $logProvider, ..."}}
+            {id: 1, text: "Is named after the service with Provider tacked on to the end", subItem: {text: "$routeProvider, $logProvider, ..."}}
         ];
         $scope.listItems = [{id: 2, text: "Allows you to configure the 'Real workhorse of AngularJS apps'"}];
     }]);

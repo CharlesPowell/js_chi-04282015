@@ -12,7 +12,7 @@ angular.module('angular1xApp')
         $scope.maxPartialIndex = 4;
         $controller('PartialsSlideController', {$scope: $scope});
 
-        $scope.configCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
+        $scope.configCode = "angular.module('demoApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
         "   .config(['$routeProvider', function ($routeProvider) {\n" +
         "       $routeProvider\n" +
         "          .when('/', {\n" +
@@ -33,7 +33,7 @@ angular.module('angular1xApp')
         "   }]);";
 
 
-        $scope.runCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
+        $scope.runCode = "angular.module('demoApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
         ".run(['$location', function($location) {\n" +
         "       $location.url('/user/5');\n" +
         "   }]);\n"

@@ -12,7 +12,7 @@ angular.module('angular1xApp')
         $scope.maxPartialIndex = 4;
         $controller('PartialsSlideController', {$scope: $scope});
 
-        $scope.serviceCode = "angular.module('testApp').factory('UserCollection', [function() {\n" +
+        $scope.serviceCode = "angular.module('demoApp').factory('UserCollection', [function() {\n" +
         "   return {\n" +
         "       _users: [],\n" +
         "       getUser: function(id) {\n" +
