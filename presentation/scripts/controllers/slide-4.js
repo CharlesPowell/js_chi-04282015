@@ -9,12 +9,32 @@
  */
 angular.module('angular1xApp')
     .controller('Slide4Controller', ['$scope', '$controller', function($scope, $controller) {
-        $controller('ListSlideController', {$scope: $scope});
+        $scope.maxPartialIndex = 4;
+        $controller('PartialsSlideController', {$scope: $scope});
 
-        $scope.listItemsCache = [
-            {id: 0, text: "Other stuff too..."},
-            {id: 1, text: "Tells your app how to make the display do stuff (Controller)"},
-            {id: 2, text: "Tells your app what to display once it gets there (Template)"}
-        ];
-        $scope.listItems = [{id: 3, text: "Tells your app where to go"}];
+        $scope.configCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
+        "   .config(['$routeProvider', function ($routeProvider) {\n" +
+        "       $routeProvider\n" +
+        "          .when('/', {\n" +
+        "               templateUrl: 'views/main.html',\n" +
+        "               controller: 'MainController'\n" +
+        "           })\n" +
+        "           .when('/user/:id', {\n" +
+        "               templateUrl: 'views/user.html',\n" +
+        "               controller: 'UserController'\n" +
+        "           })\n" +
+        "           .when('/single-page', {\n" +
+        "               templateUrl: 'views/single-page.html',\n" +
+        "               controller: 'SinglePageController'\n" +
+        "           })\n" +
+        "           .otherwise({\n" +
+        "               redirectTo: '/'\n" +
+        "           });\n" +
+        "   }]);";
+
+
+        $scope.runCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
+        ".run(['$location', function($location) {\n" +
+        "       $location.url('/user/5');\n" +
+        "   }]);\n"
     }]);

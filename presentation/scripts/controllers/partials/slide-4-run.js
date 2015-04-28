@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name angular1xApp.controller:Slide11Run
+ * @name angular1xApp.controller:Slide4Run
  * @description
- * # Slide 11 Run Controller
+ * # Slide 4 Run Controller
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide11RunController', ['$scope', '$controller', function($scope, $controller) {
+    .controller('Slide4RunController', ['$scope', '$controller', function($scope, $controller) {
         $controller('ListSlideController', {$scope: $scope});
 
         $scope.listItemsCache = [

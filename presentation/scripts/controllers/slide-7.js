@@ -9,11 +9,28 @@
  */
 angular.module('angular1xApp')
     .controller('Slide7Controller', ['$scope', '$controller', function($scope, $controller) {
-        $controller('ListSlideController', {$scope: $scope});
+        $scope.maxPartialIndex = 2;
+        $controller('PartialsSlideController', {$scope: $scope});
 
-        $scope.listItemsCache = [
-            {id: 0, text: "Contains the business logic of your application"},
-            {id: 1, text: "Is a Singleton", subItem: {text: "typically"}}
-        ];
-        $scope.listItems = [{id: 2, text: "The real workhorse of AngularJS apps"}];
+        $scope.routingCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
+        "   .config(['$routeProvider', function ($routeProvider) {\n" +
+        "       $routeProvider\n" +
+        "          .when('/', {\n" +
+        "               templateUrl: 'views/main.html',\n" +
+        "               controller: 'MainController'\n" +
+        "           })\n" +
+        "           .when('/user/:id', {\n" +
+        "               templateUrl: 'views/user.html',\n" +
+        "               controller: 'UserController'\n" +
+        "           })\n" +
+        "           .when('/single-page', {\n" +
+        "               templateUrl: 'views/single-page.html',\n" +
+        "               controller: 'SinglePageController'\n" +
+        "           })\n" +
+        "           .otherwise({\n" +
+        "               redirectTo: '/'\n" +
+        "           });\n" +
+        "   }]);";
+
+        $scope.locationCode = "$location.url('/user/5');";
     }]);

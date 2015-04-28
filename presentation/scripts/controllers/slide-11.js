@@ -8,33 +8,35 @@
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide11Controller', ['$scope', '$controller', function($scope, $controller) {
-        $scope.maxPartialIndex = 4;
-        $controller('PartialsSlideController', {$scope: $scope});
+    .controller('Slide11Controller', ['$scope', 'UserCollection', function($scope, UserCollection) {
+        $scope.user = undefined;
+        $scope.users = [];
+        $scope.log = 'Logging:\n';
+        $scope.getUser = function(id) {
+            $scope.user = angular.copy(UserCollection.getUser(id));
+            $scope.log += 'Get User with id: ' + id + ' from the UserCollection service\n' + angular.toJson($scope.user) + '\n';
+        };
+        $scope.addUser = function() {
+            $scope.users = UserCollection.addUser({ id: +$scope.user.id, name: $scope.user.name });
+            $scope.log += 'Added User: ' + angular.toJson($scope.user) + ' to the UserCollection service\n';
+            $scope.user = undefined;
+            $scope.log += 'Users: ' + angular.toJson($scope.users) + '\n\n';
+        };
 
-        $scope.configCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
-        "   .config(['$routeProvider', function ($routeProvider) {\n" +
-        "       $routeProvider\n" +
-        "          .when('/', {\n" +
-        "               templateUrl: 'views/main.html',\n" +
-        "               controller: 'MainController'\n" +
-        "           })\n" +
-        "           .when('/user/:id', {\n" +
-        "               templateUrl: 'views/user.html',\n" +
-        "               controller: 'UserController'\n" +
-        "           })\n" +
-        "           .when('/single-page', {\n" +
-        "               templateUrl: 'views/single-page.html',\n" +
-        "               controller: 'SinglePageController'\n" +
-        "           })\n" +
-        "           .otherwise({\n" +
-        "               redirectTo: '/'\n" +
-        "           });\n" +
-        "   }]);";
-
-
-        $scope.runCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
-        ".run(['$location', function($location) {\n" +
-        "       $location.url('/user/5');\n" +
-        "   }]);\n"
+        $scope.serviceTestCode = "angular.module('demoApp').controller('TestController',\n" +
+        "   ['$scope', 'UserCollection', function($scope, UserCollection) {\n" +
+        "       $scope.user = undefined;\n" +
+        "       $scope.users = [];\n" +
+        "       $scope.getUser = function(id) {\n" +
+        "          $scope.user =\n" +
+        "              angular.copy(UserCollection.getUser(id));\n" +
+        "       };\n" +
+        "       $scope.addUser = function() {\n" +
+        "          $scope.users = UserCollection.addUser({\n" +
+        "              id: +$scope.user.id,\n" +
+        "              name: $scope.user.name\n" +
+        "          });\n" +
+        "          $scope.user = undefined;\n" +
+        "       };\n" +
+        "   }]);"
     }]);

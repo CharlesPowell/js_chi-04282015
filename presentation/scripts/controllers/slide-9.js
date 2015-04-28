@@ -8,12 +8,32 @@
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide9Controller', ['$scope', '$controller', function($scope, $controller) {
-        $controller('ListSlideController', {$scope: $scope});
-
-        $scope.listItemsCache = [
-            {id: 0, text: "When 'injected' a 'thing' is searched for in the module's cache and instantiated if necessary"},
-            {id: 1, text: "All 'things' must be registered with the angular.module", subItem: {text: "angular.module('demoApp', [...]).factory('demoFactory').service('demoService').controller('demoController')"}}
+    .controller('Slide9Controller', ['$scope', function($scope) {
+        $scope.users = [
+            {id: 0, first_name: 'Patient', last_name: '0', email: 'p0@test.com', address: '410 E. Jackson Street', city: 'Springfield', state: 'IL', zip: '62703'},
+            {id: 1, first_name: 'Patient', last_name: '1', email: 'p1@test.com', address: '123 Any Street', city: 'Springfield', state: 'MA', zip: '01101'},
+            {id: 2, first_name: 'Patient', last_name: '2', email: 'p2@test.com', address: '123 Any Street', city: 'Springfield', state: 'OH', zip: '45501'},
+            {id: 3, first_name: 'Patient', last_name: '3', email: 'p3@test.com', address: '123 Any Street', city: 'Springfield', state: 'SD', zip: '57062'}
         ];
-        $scope.listItems = [{id: 2, text: "It's Magic!!!", subItem: {text: "Just kidding, it's only mapping and caching"}}];
+
+        $scope.loadUser = function(user) {
+            $scope.user = angular.copy(user);
+        };
+
+        $scope.cancel = function() {
+            $scope.user = undefined;
+        };
+
+        $scope.updateUser = function() {
+            $scope.users[$scope.user.id] = angular.copy($scope.user);
+            $scope.cancel();
+        };
+
+        $scope.deleteUser = function() {
+            $scope.users.splice($scope.user.id, 1);
+            $scope.users.forEach(function(user, index) {
+                user.id = index;
+            });
+            $scope.cancel();
+        };
     }]);

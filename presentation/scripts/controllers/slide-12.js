@@ -9,28 +9,28 @@
  */
 angular.module('angular1xApp')
     .controller('Slide12Controller', ['$scope', '$controller', function($scope, $controller) {
-        $scope.maxPartialIndex = 2;
+        $scope.maxPartialIndex = 4;
         $controller('PartialsSlideController', {$scope: $scope});
 
-        $scope.routingCode = "angular.module('testApp', ['ngResource', 'ngRoute', 'ngSanitize'])\n" +
-        "   .config(['$routeProvider', function ($routeProvider) {\n" +
-        "       $routeProvider\n" +
-        "          .when('/', {\n" +
-        "               templateUrl: 'views/main.html',\n" +
-        "               controller: 'MainController'\n" +
-        "           })\n" +
-        "           .when('/user/:id', {\n" +
-        "               templateUrl: 'views/user.html',\n" +
-        "               controller: 'UserController'\n" +
-        "           })\n" +
-        "           .when('/single-page', {\n" +
-        "               templateUrl: 'views/single-page.html',\n" +
-        "               controller: 'SinglePageController'\n" +
-        "           })\n" +
-        "           .otherwise({\n" +
-        "               redirectTo: '/'\n" +
-        "           });\n" +
+        $scope.httpCode = "angular.module('demoApp').factory('Users',\n" +
+        "   ['$http', 'User', 'UserCollection', function ($http, User, UserCollection) {\n" +
+        "       var users = {};\n" +
+        "       users.get = function() {\n" +
+        "           return $http.get('http://localhost:3000/users', {\n" +
+        "               method: 'GET',\n" +
+        "               transformResponse: function(data) {\n" +
+        "                   var resultsData = JSON.parse(data);\n" +
+        "                       return UserCollection.setUsers(angular.isArray(resultsData) ?\n" +
+        "                           resultsData.map(function(datum) {\n" +
+        "                               return new User(datum);\n" +
+        "                           }) : resultsData);\n" +
+        "                   }\n" +
+        "               });\n" +
+        "       };\n" +
+        "       return users;\n" +
         "   }]);";
 
-        $scope.locationCode = "$location.url('/user/5');";
+        $scope.resourceCode = "angular.module('angular1xApp').factory('User', ['$resource', function ($resource) {\n" +
+        "   return $resource('http://localhost:3000/users/:id', null, {update: {method: 'PUT'} });\n" +
+        "}]);";
     }]);

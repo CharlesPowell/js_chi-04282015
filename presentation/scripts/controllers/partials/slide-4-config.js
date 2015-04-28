@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name angular1xApp.controller:Slide11Config
+ * @name angular1xApp.controller:Slide4Config
  * @description
- * # Slide 11 Config Controller
+ * # Slide 4 Config Controller
  * Controller of the angular1xApp
  */
 angular.module('angular1xApp')
-    .controller('Slide11ConfigController', ['$scope', '$controller', function($scope, $controller) {
+    .controller('Slide4ConfigController', ['$scope', '$controller', function($scope, $controller) {
         $controller('ListSlideController', {$scope: $scope});
 
         $scope.listItemsCache = [

@@ -36,8 +36,7 @@ angular
                 controller: 'Slide5Controller'
             })
             .when('/6', {
-                templateUrl: 'views/slide-6.html',
-                controller: 'Slide6Controller'
+                templateUrl: 'views/slide-6.html'
             })
             .when('/7', {
                 templateUrl: 'views/slide-7.html',
@@ -52,7 +51,8 @@ angular
                 controller: 'Slide9Controller'
             })
             .when('/10', {
-                templateUrl: 'views/slide-10.html'
+                templateUrl: 'views/slide-10.html',
+                controller: 'Slide10Controller'
             })
             .when('/11', {
                 templateUrl: 'views/slide-11.html',
@@ -69,6 +69,17 @@ angular
             .when('/14', {
                 templateUrl: 'views/slide-14.html',
                 controller: 'Slide14Controller'
+            })
+            .when('/15', {
+                templateUrl: 'views/slide-15.html',
+                controller: 'Slide15Controller'
+            })
+            .when('/16', {
+                templateUrl: 'views/slide-16.html',
+                controller: 'Slide16Controller'
+            })
+            .when('/17', {
+                templateUrl: 'views/slide-17.html'
             })
             .otherwise({
                 redirectTo: '/'

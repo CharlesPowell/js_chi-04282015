@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name testApp.service:UserCollection
+ * @name angular1xApp.service:UserCollection
  * @description
  * # User Collection Value
- * service of the testApp
+ * service of the angular1xApp
  */
-angular.module('testApp')
+angular.module('angular1xApp')
     .factory('UserCollection', [function() {
         return {
             _users: [],

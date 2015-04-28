@@ -12,12 +12,12 @@ angular.module('angular1xApp')
         $controller('ListSlideController', {$scope: $scope});
 
         $scope.listItemsCache = [
-            {id: 0, text: 'Dependency Injection'},
-            {id: 1, text: 'Providers'},
-            {id: 2, text: 'Services'},
-            {id: 3, text: 'Templates'},
-            {id: 4, text: 'Controllers'},
-            {id: 5, text: 'Routing'}
+            {id: 0, text: 'Providers'},
+            {id: 1, text: 'Services'},
+            {id: 2, text: 'Templates'},
+            {id: 3, text: 'Controllers'},
+            {id: 4, text: 'Routing'},
+            {id: 5, text: 'Dependency Injection'}
         ];
         $scope.listItems = [{id: 6, text: 'App/Module'}];
     }]);

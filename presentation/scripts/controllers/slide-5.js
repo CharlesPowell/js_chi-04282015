@@ -12,8 +12,8 @@ angular.module('angular1xApp')
         $controller('ListSlideController', {$scope: $scope});
 
         $scope.listItemsCache = [
-            {id: 0, text: "Interacts with its template(s) through the $scope object"},
-            {id: 1, text: "Can interact with Services, Values, Constants and Filters"}
+            {id: 0, text: "When 'injected' a 'thing' is searched for in the module's cache and instantiated if necessary"},
+            {id: 1, text: "All 'things' must be registered with the angular.module", subItem: {text: "angular.module('demoApp', [...]).factory('demoFactory').service('demoService').controller('demoController')"}}
         ];
-        $scope.listItems = [{id: 2, text: "The page's codebase"}];
+        $scope.listItems = [{id: 2, text: "It's Magic!!!", subItem: {text: "Just kidding, it's only mapping and caching"}}];
     }]);
