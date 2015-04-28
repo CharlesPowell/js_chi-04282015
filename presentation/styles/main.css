@@ -160,20 +160,24 @@ paging > button:disabled {
     width: 200px;
 }
 
-.slide-0 > a > figure > img {
+.slide-0 > a > figure > img,
+.slide-17 > a > figure > img {
     max-width: 500px;
 }
 
-.slide-0 > a > h3 {
+.slide-0 > a > h3,
+.slide-17 > a > h3 {
     padding-top: 0;
 }
 
-.slide-0 > h4 > a {
+.slide-0 > h4 > a,
+.slide-17 > h4 > a {
     display: inline-block;
     margin-left: 25px;
 }
 
-.slide-0 > h4 > a > img {
+.slide-0 > h4 > a > img,
+.slide-17 > h4 > a > img {
     vertical-align: middle;
     padding-right: 10px;
 }
