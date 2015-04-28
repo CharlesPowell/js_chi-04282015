@@ -12,8 +12,8 @@ angular.module('angular1xApp')
         $controller('ListSlideController', {$scope: $scope});
 
         $scope.listItemsCache = [
-            {id: 0, text: "Tells your page what to do"},
-            {id: 1, text: "Tells your page how to act"}
+            {id: 0, text: "Interacts with its template(s) through the $scope object"},
+            {id: 1, text: "Can interact with Services, Values, Constants and Filters"}
         ];
-        $scope.listItems = [{id: 2, text: "Here's the page's JavaScript"}];
+        $scope.listItems = [{id: 2, text: "The page's codebase"}];
     }]);

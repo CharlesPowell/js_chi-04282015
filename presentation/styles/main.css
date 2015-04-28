@@ -56,6 +56,13 @@ h6 {
     font-size: 12px;
 }
 
+ul > li.ng-enter {
+    -webkit-animation: fadeInUp 1s;
+    -moz-animation: fadeInUp 1s;
+    -o-animation: fadeInUp 1s;
+    animation: fadeInUp 1s;
+}
+
 li {
     text-align: left;
 }
@@ -137,13 +144,6 @@ paging > button:disabled {
     text-align: center;
 }
 
-.slide > ul > li.ng-enter {
-    -webkit-animation: fadeInUp 1s;
-    -moz-animation: fadeInUp 1s;
-    -o-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
-}
-
 .slide-0 > h1 >figure {
     display: inline-block;
     margin: 0;
@@ -212,4 +212,48 @@ paging > button:disabled {
 
 .slide-10 > figure > img {
     width: 63%;
+}
+
+.example-slide {
+    text-align: left;
+}
+
+.example-slide > .left > .no-users {
+    font-size: 24px;
+}
+
+.example-slide > .left > ul > li > a {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.example-slide > .right > form > .user-data > label {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.example-slide > .right > form > .user-data > input,
+.example-slide > .right > form > .user-data > label > input {
+    line-height: 26px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.example-slide > .right > form > button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.example-slide > .right > form > button:disabled {
+    background-color: #6CB8C1;
+    color: #DDDDDD;
+    cursor: default;
+}
+
+.example-slide > .left {
+    float: left;
+}
+
+.example-slide > .right {
+    float: right;
 }

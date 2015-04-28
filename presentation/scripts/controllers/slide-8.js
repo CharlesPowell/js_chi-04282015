@@ -12,8 +12,8 @@ angular.module('angular1xApp')
         $controller('ListSlideController', {$scope: $scope});
 
         $scope.listItemsCache = [
-            {id: 0, text: "Is an instantiated service, not a singleton", subItem: {text: "Must be new'ed in user code"}},
-            {id: 1, text: "Wrapper for $http", subItem: {text: "Contains $get, $save and $delete object functions and query class function"}}
+            {id: 0, text: "Provides methods and properties for configuring the created service", subItem: {text: "$routeProvider.when(...)"}},
+            {id: 1, text: "Is typically named after the service with Provider tacked on to the end", subItem: {text: "$routeProvider, $logProvider, ..."}}
         ];
-        $scope.listItems = [{id: 2, text: "Used to connect to RESTful APIs"}];
+        $scope.listItems = [{id: 2, text: "Allows you to configure the 'Real workhorse of AngularJS apps'"}];
     }]);

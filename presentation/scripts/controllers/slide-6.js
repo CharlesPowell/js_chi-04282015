@@ -16,5 +16,5 @@ angular.module('angular1xApp')
             {id: 1, text: "AngularJS specific Directives", subItem: {text: "<span ng-if='visibilityFlag'>...</span>"}},
             {id: 2, text: "Standard HTML syntax"}
         ];
-        $scope.listItems = [{id: 3, text: "Here's the page's HTML...Sorta"}];
+        $scope.listItems = [{id: 3, text: "Here's the page's HTML...sorta"}];
     }]);

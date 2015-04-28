@@ -13,7 +13,7 @@ angular.module('angular1xApp')
 
         $scope.listItemsCache = [
             {id: 0, text: 'Dependency Injection'},
-            {id: 1, text: '$resource'},
+            {id: 1, text: 'Providers'},
             {id: 2, text: 'Services'},
             {id: 3, text: 'Templates'},
             {id: 4, text: 'Controllers'},

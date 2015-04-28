@@ -54,6 +54,22 @@ angular
             .when('/10', {
                 templateUrl: 'views/slide-10.html'
             })
+            .when('/11', {
+                templateUrl: 'views/slide-11.html',
+                controller: 'Slide11Controller'
+            })
+            .when('/12', {
+                templateUrl: 'views/slide-12.html',
+                controller: 'Slide12Controller'
+            })
+            .when('/13', {
+                templateUrl: 'views/slide-13.html',
+                controller: 'Slide13Controller'
+            })
+            .when('/14', {
+                templateUrl: 'views/slide-14.html',
+                controller: 'Slide14Controller'
+            })
             .otherwise({
                 redirectTo: '/'
             });
